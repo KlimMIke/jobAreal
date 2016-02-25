@@ -1,3 +1,35 @@
-body {
+.main {
+    width: 50%;
+}
 
+.img {
+     float: left;
+     padding-right: 20px;
+}
+
+.quote {
+     width: 85%;
+     float: right;
+     border: 1px solid black;
+     font-family: Georgia;
+     font-style: italic;
+     padding: 0px 5px 0px 5px;
+}
+
+h1 {
+    border-bottom: 2px solid black;
+}
+
+li {
+    margin-bottom: 10px;
+}
+ol>li {
+    padding-left: 20px;
+}
+ol  {
+    padding-left: 20px;
+}
+
+.nonDot {
+    list-style-type: none;
 }
