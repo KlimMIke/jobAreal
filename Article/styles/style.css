@@ -1,5 +1,11 @@
 .main {
     width: 50%;
+    margin-left: 20px;
+}
+.footer {
+    text-align: right;
+    font-size: 12px;
+    margin-top: 40px;
 }
 
 .img {
@@ -11,7 +17,6 @@
      width: 85%;
      float: right;
      border: 1px solid black;
-     font-family: Georgia;
      font-style: italic;
      padding: 0px 5px 0px 5px;
 }
@@ -33,9 +38,49 @@ ol  {
 .nonDot {
     list-style-type: none;
 }
-
+/* Chemical Element */
 .greenN {
     background-color: green;
-    width: 200px;
-    height: 100px;
+    color: white;
+    width: 170px;
+    height: 135px;
+}
+.symbolElement {
+    margin: 7px;
+    float: left;
+    font-size: 26px;
+    text-align: left;
+}
+.atomicNumber {
+    margin: 7px;
+    float: right;
+    font-size: 26px;
+    text-align: right;
+}
+.atomicWeight {
+    clear: both;
+    margin: 7px;
+    font-size: 16px;
+    text-align: right;
+}
+.electronConf {
+    text-align: left;
+    margin: 7px;
+    font-size: 16px;
+}
+.nameElem {
+    text-align: center;
+    margin: 7px;
+    font-size: 26px;
+}
+/* Table parameters */
+caption {
+    margin: 10px;
+}
+.num {
+    text-align: right;
+    padding-right: 5px;
+}
+.text {
+    padding-left: 5px;
 }
