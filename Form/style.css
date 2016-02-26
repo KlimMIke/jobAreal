@@ -1,0 +1,15 @@
+body {
+    margin: 20px;
+    background: linear-gradient(to bottom left, lightsteelblue, white);
+    height: 1000px;
+    width: 100%;
+}
+
+.valid {
+    color: red;
+}
+div > div {
+    display: inline-block;
+    padding: 30px;
+    border: 1px solid black;
+}
