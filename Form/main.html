@@ -7,86 +7,55 @@
 </head>
 <body>
 <div>
-    Вы можете оформить заявку на услугу. В течение рабочего дня с вами свяжется эксперт для предварительной бесплатной консультации.
-</div>
-<div>
-    <div>Ваше имя</div>
-    <div>
-        <input type="text">
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <div>Телефон</div>
-    <div>
-        <input type="text">
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <div>E-mail</div>
-    <div>
-        <input type="text">
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <div>Тип недвижимости</div>
-    <div>
-        <input type="radio"> Квартира <br>
-        <input type="radio"> Дом <br>
-        <input type="radio"> Коммерческая недвижимость <br>
-        <input type="radio"> Земельный цчасток <br>
-        <input type="radio"> Другое <br>
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <div>Площадь</div>
-    <div>
-        <input type="text">
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <div>Фотографии (до 1 Мб)</div>
-    <div>
-        <input type="file"><br>
-        <input type="file"><br>
-        <input type="file"><br>
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <div>Описание</div>
-    <div>
-        <input type="text">
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <div>Цена</div>
-    <div>
-        <input type="text">
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    Защита от автоматического заполнения
-</div>
-<div>
-    <div>Введите символы с картинки</div>
-    <div>
-        <input type="text">
-    </div>
-    <div class="valid">Не заполненно обязательное поле!</div>
-</div>
-<div>
-    <button>Отправить</button>
-    <button>Очистить</button>
-</div>
-<div>
-    Поля, обязательны для заполнения
+    <form>
+        <p class="note">Вы можете оформить заявку. В течение рабочего дня с Вами свяжется оператор.</p>
+        <div class="cell">
+            <label for="lastname" class="text">Фамилия</label>
+            <input type="text" class="input" name="lastname" id="lastname" required>
+        </div>
+        <div class="cell">
+            <label for="firstname" class="text">Имя</label>
+            <input type="text" class="input" name="firstname" id="firstname" required>
+        </div>
+        <div class="cell">
+            <label for="middlename" class="text">Отчество</label>
+            <input type="text" class="input" name="middlename" id="middlename" required>
+        </div>
+        <div class="cell">
+            <label for="sex" class="text">Пол</label>
+            <select name="sex" id="sex">
+                <option value="Male">Мужской</option>
+                <option value="Female">Женский</option>
+            </select>
+        </div>
+        <div class="cell">
+            <label for="email" class="text">e-mail</label>
+            <input type="email" class="input" name="email" id="email">
+        </div>
+        <div class="cell">
+            <label for="phone" class="text">Телефон</label>
+            <input type="text" class="input" name="phone" id="phone">
+        </div>
+        <div class="cell">
+            <label for="city" class="text">Город</label>
+            <input type="text" class="input" name="city" id="city">
+        </div>
+        <div class="cell">
+            <label for="zipcode" class="text">Индекс</label>
+            <input type="text" class="input" name="zipcode" id="zipcode">
+        </div>
+        <div class="cell">
+            <label for="adress" class="text">Адрес</label>
+            <input type="text" class="input" name="adress" id="adress">
+        </div>
+
+        <div class="btn">
+            <input type="submit" id="submitbtn" name="submitbtn" value="Отправить">
+        </div>
+
+
+
+    </form>
 </div>
 </body>
 </html>

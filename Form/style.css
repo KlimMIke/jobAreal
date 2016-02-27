@@ -4,12 +4,31 @@ body {
     height: 1000px;
     width: 100%;
 }
-
+.note {
+    font-family: 'Cursive', cursive;
+}
 .valid {
     color: red;
 }
-div > div {
+.hide {
+    display: none;
+}
+
+.text {
     display: inline-block;
-    padding: 30px;
-    border: 1px solid black;
+    width: 200px;
+    padding: 6px 0;
+    color: #464646;
+}
+input:focus:required:invalid {
+    border: 2px solid red;
+}
+input:focus:required:valid {
+    border: 2px solid green;
+}
+input:focus {
+    outline: none;
+}
+input:required:valid {
+    border: 2px solid greenyellow;
 }
