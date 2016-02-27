@@ -7,25 +7,25 @@
 </head>
 <body>
 <div>
-    <form>
+    <form action="writing_to_file.php" method="post">
         <p class="note">Вы можете оформить заявку. В течение рабочего дня с Вами свяжется оператор.</p>
         <div class="cell">
             <label for="lastname" class="text">Фамилия</label>
-            <input type="text" class="input" name="lastname" id="lastname" required>
+            <input type="text" class="input" name="lastname" id="lastname">
         </div>
         <div class="cell">
             <label for="firstname" class="text">Имя</label>
-            <input type="text" class="input" name="firstname" id="firstname" required>
+            <input type="text" class="input" name="firstname" id="firstname">
         </div>
         <div class="cell">
             <label for="middlename" class="text">Отчество</label>
-            <input type="text" class="input" name="middlename" id="middlename" required>
+            <input type="text" class="input" name="middlename" id="middlename">
         </div>
         <div class="cell">
             <label for="sex" class="text">Пол</label>
             <select name="sex" id="sex">
-                <option value="Male">Мужской</option>
-                <option value="Female">Женский</option>
+                <option value="Мужской">Мужской</option>
+                <option value="Женский">Женский</option>
             </select>
         </div>
         <div class="cell">
