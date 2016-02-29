@@ -23,11 +23,17 @@
             fwrite($file, "Город пользователя: ".$city."\n");
             fwrite($file, "Адресс пользователя: ".$adress."\n");
 
-            print "<h1>Ваша заявка была отправлена!</h1><br>
-                <p>Скоро с Вами свяжутся $firstname $middlename!</p>
-                <a href='main.html'>
-                    <button>На главную</button>
-                </a>";
+            print "
+                <html>
+                <link type='text/css' rel='stylesheet' href='style.css'>
+                <body>
+                <div class='main'>
+                    <h1 class='note' style='font-size: 26px; text-align: center'>Ваша заявка была отправлена!</h1>
+                    <p class='note' style='text-align: center'>Скоро с Вами свяжутся $firstname $middlename!</p>
+                    <a href='main.html'><button class='btn'>На главную</button></a>
+                </div>
+                </body>
+                </html>";
         } else {
             print "<p> Извините, что-то произошло на сервере...</p>";
         }
