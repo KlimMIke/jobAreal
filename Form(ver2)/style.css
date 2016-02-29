@@ -79,8 +79,9 @@ body {
     box-shadow: inset 0px 6px 3px cornflowerblue;
 }
 .input[type="radio"] {
-    width: 20px;
-    height: 20px;
+    margin-top: 11px;
+    width: 22px;
+    height: 22px;
 }
 .input_radio {
     font-family: Arial, Tahoma, sans-serif;
