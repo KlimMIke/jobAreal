@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="validationforms.js"></script>
+    <title>Заявка на услугу</title>
+</head>
+<body>
+<div class="main">
+    <form name="form" action="writing_to_file.php" method="post" onsubmit="return validate_form()">
+        <p class="note">Вы можете оформить заявку.<br> В течение рабочего дня с Вами свяжется оператор.</p>
+        <div class="cell">
+            <label for="lastname" class="text">Фамилия: <span class="asterisk">*</span></label>
+            <input type="text" class="input" name="lastname" id="lastname">
+        </div>
+        <div class="cell">
+            <label for="firstname" class="text">Имя: <span class="asterisk">*</span></label>
+            <input type="text" class="input" name="firstname" id="firstname">
+        </div>
+        <div class="cell">
+            <label for="middlename" class="text">Отчество: </label>
+            <input type="text" class="input" name="middlename" id="middlename">
+        </div>
+        <div class="cell">
+            <label class="text">Пол: <span class="asterisk">*</span></label>
+            <input type="radio" class="input" name="sex" value="Мужской"><span class="input_radio">Мужской</span>
+            <input type="radio" class="input" name="sex" value="Женский"><span class="input_radio">Женский</span>
+        </div>
+        <div class="cell">
+            <label for="email" class="text">e-mail: <span class="asterisk">*</span></label>
+            <input type="text" class="input" name="email" id="email">
+        </div>
+        <div class="cell">
+            <label for="phone" class="text">Телефон: <span class="asterisk">*</span></label>
+            <input type="text" class="input" name="phone" id="phone">
+        </div>
+        <div class="cell">
+            <label for="city" class="text">Город: </label>
+            <input type="text" class="input" name="city" id="city">
+        </div>
+        <div class="cell">
+            <label for="zipcode" class="text">Индекс: </label>
+            <input type="text" class="input" name="zipcode" id="zipcode">
+        </div>
+        <div class="cell">
+            <label for="adress" class="text">Адрес: </label>
+            <input type="text" class="input" name="adress" id="adress">
+        </div>
+        <div class="cell">
+            <p class="note"> Поля, помеченные <span class="asterisk">*</span> обязательны для заполнения!</p>
+        </div>
+
+        <div class="cell">
+            <input class="btn" type="submit" id="submitbtn" name="submitbtn" value="Отправить">
+        </div>
+
+
+
+    </form>
+</div>
+</body>
+</html>
